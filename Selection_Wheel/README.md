@@ -1,0 +1,52 @@
+# CSS-Selection-Wheel
+CSS Selection Wheel
+
+<div style="text-align:center; margin:10px">Watch the <a href="https://youtube.com/shorts/PcI_NDH5Q7k" target="_blank">CSS Selection Wheel</a> Youtube Video</div>
+<div><br/></div>
+
+```
+<table>
+    <tr>
+        <td class="cell c1">Menu</td>
+        <td class="cell c2">News</td>
+    </tr>
+    <tr>
+        <td class="cell c3">Store</td>
+        <td class="cell c4">About</td>
+    </tr>
+</table>
+<style>
+    .cell {
+        width: 170px;
+        height: 170px;
+        font: bold 28px Roboto;
+        box-sizing: border-box;
+        padding: 25px;
+        color: #040320;
+        background-color: #ffcccc;
+        transition: background-color 250ms linear;
+    }
+    .cell:hover {
+        background-color: #ff6666;
+        cursor: pointer;
+    }
+    .c1 {
+        border-radius: 180% 0 0 0;
+        vertical-align: bottom;
+        text-align: right;
+    }
+    .c2 {
+        border-radius: 0 180% 0 0;
+        vertical-align: bottom;
+    }
+    .c3 {
+        border-radius: 0 0 0 180%;
+        vertical-align: top;
+        text-align: right;
+    }
+    .c4 {
+        border-radius: 0 0 180% 0;
+        vertical-align: top;
+    }
+</style>
+```
